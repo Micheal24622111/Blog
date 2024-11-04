@@ -158,7 +158,7 @@ textarea {
   padding-top: 20px;
   color: #757575;
   background-color: #757575;
-  background-image: url(../images/blog.jpg);
+  /* background-image: url(../images/blog.jpg); */
   background-size: cover;
 }
 
@@ -214,6 +214,9 @@ textarea {
   height: 900px;
   
 }
+.overall{
+  background-color: #e2e8ee;
+}
 
 h1{
   text-align: left;
@@ -260,7 +263,12 @@ h2{
   white-space:inherit;    /*Prevents text from wrapping */
 
 }
-
+.second{
+  background-position: cover;
+  background-image:url(../images/secondd.jpg) ;
+  background-size: cover;
+  border-radius: 20px;
+}
 
 .container {
   /* margin: 40px; */
@@ -269,11 +277,11 @@ h2{
   flex-direction:column;
   text-align: left;
   align-items: flex-start;
-  height: 100vh; /* if you don't want it to take up the full screen, reduce this number */
+  /* height: 100vh; if you don't want it to take up the full screen, reduce this number */
   background-size:cover !important;
   background-color: rgb(176, 176, 181);
   background-attachment:scroll;
-  background: url(../images/blog.jpg) no-repeat center center scroll;
+  /* background: url(../images/blog.jpg) no-repeat center center scroll; */
 }
 
 .text-brand {
@@ -313,7 +321,7 @@ h2{
     
       
 button {
-  background: #53575a;
+  background: #9ca9b4;
   transition: background ease .25s;
   /* border-radius: 39px; */
   display: inline-block;
@@ -325,6 +333,7 @@ button {
   font-size: 1.2rem;
   cursor: pointer;
   text-align: center;
+  border-radius: 30px;
   
 }
 button:hover {
@@ -429,19 +438,20 @@ button:focus {
     color: #007bff;
   }
 
-  @media (max-width: 768px) {
+  @media only screen and (max-width: 750px){
     .container {
-      /* display: grid; */
+     
       padding-top: 40px;
+      background-color: rgb(176, 176, 181);
+   
   
     }
     .Well{
       display: grid;
-      /* padding-right: 55%; */
+    
       grid-template-columns: repeat(1, 1fr);
       gap: 75px;
-      /* background: url(../images/blog.jpg) no-repeat center center scroll; */
-      /* background-size:cover !important; */
+      
     }
     h2{
       
@@ -449,9 +459,9 @@ button:focus {
       text-align: justify;
       font-weight: bold;
       font-style: oblique;
-      /* font-size: 30px; */
+      font-size: 20px;
       max-height: 500px;
-      /* padding: 10px; */
+      
       border-top-left-radius: 5%;
       border-bottom-right-radius: 5%;
    }
@@ -483,7 +493,6 @@ button:focus {
       position: fixed; 
       width: 100%;
       height:40px;
-      /* font-size: 90px; */
       background-color: rgb(19, 16, 16);
       display:inline-flex;
       justify-content: center;
@@ -494,11 +503,11 @@ button:focus {
     a {
       color: white;
       text-decoration: none;
-  
-      font-size: 20px;
+      padding: 5PX;
+      font-size: 15px;
       display: inline-block;
-      margin: 10px; /* Adds 10px margin on the left and right */
-      text-decoration: none; /* Removes underline from links */ 
+      margin: 5px; 
+      text-decoration: none;
     }
     
     .foot{
@@ -508,8 +517,23 @@ button:focus {
   }
   .Disc{
     text-align: justify;
+    font-size: LARGE;
   }
+
+  .supportpage{
+   background-size: 100vh;
+    height: 100%;
 }
+
+.secondd{
+  height: 500px;
+}
+  }
+
+
+
+
+
 
   footer {
     background-color: #010101;

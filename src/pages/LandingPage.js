@@ -4,10 +4,11 @@ import Discover from './Discover';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram, faWhatsapp, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
+
 const LandingPage = () => {
   return (
     
-    <div>
+    <div className='overall'>
       
     <div className="masthead">
         
@@ -24,11 +25,11 @@ const LandingPage = () => {
         In a world that's constantly evolving, the landscape of technology and software development stands at the forefront of innovation and transformation. Hello, and welcome to my tech blog! My name is Mr X. , and I'm thrilled to have you join me on this digital adventure. Technology is more than just a career or a hobby; it's a passion that drives me to explore, learn, and share my knowledge with others. Whether you're a seasoned developer, a tech enthusiast, or a curious newcomer, this blog is your gateway to the fascinating world of coding, software development, and beyond.
 
 
-            </h2>     
+            </h2>  
 
-            
-      {/* <img src={`${process.env.PUBLIC_URL}/images/blog.jpg`} alt="Blog" /> */}
-     
+                    <div className='second'>
+                          ..
+                   </div>
           </div>
           
           <Discover/>
