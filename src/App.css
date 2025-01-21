@@ -147,6 +147,16 @@ textarea {
   cursor: not-allowed;
 }
 
+
+.land{
+  color: #000000;
+  font-size: 80px;
+  justify-content: center;
+  text-align: left;
+  font-weight: bolder;
+
+}
+
 .homePage {
   padding-top: 50%;
   width: 100%;
@@ -215,7 +225,10 @@ textarea {
   
 }
 .overall{
-  background-color: #e2e8ee;
+  background-color: #ffffff;
+ 
+  /* background-attachment: fixed; */
+  
 }
 
 h1{
@@ -236,6 +249,7 @@ h1{
 }
 .Disc{
   /* display: grid; */
+  padding: 40px;
   color: rgb(16, 47, 57);
   font-size: larger;
   font-weight: 400;
@@ -251,16 +265,18 @@ h2{
   /* position:absolute; */
    border: 5px solid black;
    text-align: justify;
+   word-spacing: -5px;
    color:rgb(16, 47, 57);
    font-weight: normal;
+   font-family: 'Times New Roman', Times, serif;
    /* font-style: oblique; */
    padding: 5px 5px 0px 10px;
    border-top-left-radius: 5%;
    border-bottom-right-radius: 5%;
-   max-height: 600px;      /* Set your desired max height */
-  overflow: hidden;      /* Ensures overflow is hidden*/
-  text-overflow: ellipsis; /*Adds ellipsis for overflowing text*/
-  white-space:inherit;    /*Prevents text from wrapping */
+   /* max-height: 600px;      Set your desired max height */
+   /* overflow: hidden;      Ensures overflow is hidden */
+  /* text-overflow: ellipsis;  Adds ellipsis for overflowing text */
+  /* white-space:inherit;   */
 
 }
 .second{
@@ -277,9 +293,15 @@ h2{
   flex-direction:column;
   text-align: left;
   align-items: flex-start;
+  text-transform: uppercase;
+  font-size: 15px; 
+  background-image: url(../images/people-technology-gaming-innovation-concept.jpg);
+  background-size: 1500px;
+  background-repeat: no-repeat;
+  background-position: fixed;
   /* height: 100vh; if you don't want it to take up the full screen, reduce this number */
   background-size:cover !important;
-  background-color: rgb(176, 176, 181);
+  /* background-color: rgb(176, 176, 181); */
   background-attachment:scroll;
   /* background: url(../images/blog.jpg) no-repeat center center scroll; */
 }
@@ -346,10 +368,46 @@ button:focus {
 
 .Offer{
   position: relative;
-  font-size: larger;
+  font-size: 35px;
+  font-weight: bolder;
   color: #000000;
   font-weight: bold;
   padding: 3% 3% 0 3%;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+   /* color: #4CAF50;  */
+   text-align: center; 
+   font-size: 36px; 
+   padding: 20px; 
+   margin: 20px; 
+   border-radius: 15px;
+   
+   background-color: #f0f0f0; /* Background color */
+    text-shadow: 0 0 10px #dee1de, 0 0 20px #4CAF50, 0 0 30px #FF5733; /* Glow effect */ 
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+
+.latest {
+  display: grid;
+  font-size: 30px;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  padding: 20px;
+  /* background-color: #000000; */
+
+}
+
+.news-item{
+  background-color: #e0e0e0;
+  padding: 30px;
+  margin: 10px 50px ;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  align-content: baseline;
+  text-align:justify;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
 .grid-container {
@@ -360,7 +418,7 @@ button:focus {
   /* background-color: #000000; */
 }
 .grid-item {
-  background-color: #f9f9f9;
+  background-color: #e0e0e0;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -380,7 +438,12 @@ button:focus {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
 }
-
+.gri{
+  font-size: large;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bolder;
+}
 
 
   footer {
@@ -457,8 +520,8 @@ button:focus {
       
       display: grid;
       text-align: justify;
-      font-weight: bold;
-      font-style: oblique;
+      /* font-weight: bold; */
+      /* font-style: oblique; */
       font-size: 20px;
       max-height: 500px;
       
@@ -528,6 +591,27 @@ button:focus {
 .secondd{
   height: 500px;
 }
+
+
+.news-item{
+  background-color: #e0e0e0;
+  padding: 5px;
+  margin: 5px 5px;
+  text-align:unset;
+  line-height: 1.2; /* Adjust line height */
+  font-family: Arial, sans-serif; 
+
+}
+
+.land{
+  color: #000000;
+  font-size: 50px;
+  justify-content: center;
+  text-align: left;
+  font-weight: bolder;
+
+}
+
   }
 
 
@@ -571,5 +655,7 @@ button {
     padding: 10px 15px;
     cursor: pointer;
 }
+
+
 
 /* Media Query for Mobile Devices */

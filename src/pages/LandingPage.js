@@ -3,8 +3,9 @@ import GridTable from './GridTable';
 import Discover from './Discover';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram, faWhatsapp, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import Latest from './Latest';
 
-
+const handleClick = () => { window.location.href = "https://www.github.com"; };
 const LandingPage = () => {
   return (
     
@@ -14,29 +15,27 @@ const LandingPage = () => {
         
       
 {/* Wellcome section Content */}
-        
+
+
+
         <div className="container">
      
+
       <h1>Welcome to X-Tech Blog!
           </h1>
           
-        <div className='Well'>
-        <h2>
-        In a world that's constantly evolving, the landscape of technology and software development stands at the forefront of innovation and transformation. Hello, and welcome to my tech blog! My name is Mr X. , and I'm thrilled to have you join me on this digital adventure. Technology is more than just a career or a hobby; it's a passion that drives me to explore, learn, and share my knowledge with others. Whether you're a seasoned developer, a tech enthusiast, or a curious newcomer, this blog is your gateway to the fascinating world of coding, software development, and beyond.
-
-
-            </h2>  
-
-                    <div className='second'>
-                          ..
-                   </div>
+          <div className='Well'>
+            
+          <div className='land'> Your Premier Destination for Tech Solutions </div>
+            
           </div>
           
-          <Discover/>
-          <button > Explore My Work</button>
-
-          
+           {/* <button > Explore My Work</button> */}
+          <div> <button type="button" onClick={handleClick}> Explore My Work</button> </div>
         </div>
+
+        <Discover/>
+         
         
 {/* Wellcome section Content */}
         
@@ -45,7 +44,9 @@ const LandingPage = () => {
       </div>
       <div className='About'>
 
-      <GridTable />
+        <GridTable />
+        
+        <Latest />
       </div>
 
       <footer>
@@ -92,7 +93,12 @@ const LandingPage = () => {
           </div>
           </div>
 
-          </footer>
+      </footer>
+      
+      <footer class="site-footer">
+  <p>&copy; 2025 Micheal Kiishi. All rights reserved.</p>
+</footer>
+
           
 
     </div>
