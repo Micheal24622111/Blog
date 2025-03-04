@@ -612,6 +612,14 @@ button:focus {
 
 }
 
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  /* padding: 10px 15px; */
+  cursor: pointer;
+}
+
   }
 
 
@@ -651,8 +659,9 @@ input, textarea {
 button {
     background-color: #007bff;
     color: white;
-    border: none;
-    padding: 10px 15px;
+    border-radius: -18px;
+    padding: 1px 15px;
+    margin-left: 10px;
     cursor: pointer;
 }
 
