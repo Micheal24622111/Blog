@@ -80,8 +80,7 @@ const LandingPage = () => {
     <div className="feedback-form">
         <h4>Feedback</h4>
         <form action="/submit-feedback" method="post">
-            
-            
+
           
             
             <label for="message">Message:</label>
@@ -109,3 +108,9 @@ const LandingPage = () => {
 };
 
 export default LandingPage;
+
+
+// const apiUrl = process.env.REACT_APP_API_URL;
+// const apiKey = process.env.REACT_APP_API_KEY;
+
+// console.log(apiUrl, apiKey); // Outputs the values of the environment variables

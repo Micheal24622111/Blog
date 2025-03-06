@@ -10,6 +10,12 @@ import SupportPage from "./pages/SupportPage";
 import LandingPage from "./pages/LandingPage";
 
 function App() {
+  const apiUrl = process.env.REACT_APP_API_URL;
+  const apiKey = process.env.REACT_APP_API_KEY;
+
+  console.log("API URL:", apiUrl);
+  console.log("API Key:", apiKey);
+  
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
 
   const signUserOut = () => {

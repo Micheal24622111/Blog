@@ -18,3 +18,11 @@ const Discover = () => {
 };
 
 export default Discover;
+
+
+
+const apiUrl = process.env.REACT_APP_API_URL;
+const apiKey = process.env.REACT_APP_API_KEY;
+
+// Use these variables in your application
+console.log(apiUrl, apiKey);
